@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    console.log('문제1 1차원배열 삼각형으로 배열하기');
+    a = [];
+    // -----------------------------------------------------------------------
+    // function prtI(num) {
+    //   for (i = 0; i < num; i++) {
+    //     b = i;
+    //     console.log(b);
+    //   }
+    // }
+
+    // prtI(1);
+    // prtI(2);
+    // prtI(3);
+
+    // 0 0 1 0 1 2가 세로로 나옴
+
+    // -----------------------------------------------------------------------
+    // function prtI(num) {
+    //   for (i = 0; i < num; i++) {
+    //     b = i;
+    //     a = [b];
+    //   }
+
+    //   console.log(a);
+    // }
+
+    // prtI(1);
+    // prtI(2);
+    // prtI(3);
+
+    // [0] [1] [2] 이 세로로 나옴
+
+    // -----------------------------------------------------------------------
+    // function prtI(num) {
+    //   for (i = 0; i < num; i++) {
+    //     b = i;
+    //     process.stdout.write(b);
+    //   }
+    // }
+
+    // prtI(1);
+    // prtI(2);
+    // prtI(3);
+
+    // process is not defined
+
+    // -----------------------------------------------------------------------
+    function prtI(num) {
+      for (i = 1; i <= num; i++) {
+        b = i;
+        a.push(b);
+
+        console.log(a);
+      }
+    }
+
+    prtI(5);
+
+  </script>
+  <script>
+    console.log('문제2 달팽이');
+
+    a1 = [];
+    // a1 = [[1,2],[3,4]];
+    // console.log(a1[0]);
+    // console.log(a1[1]);
+
+    function prtI1(num) {
+      b = Math.pow(num,2);
+      c = [];
+      for (i = 1; i <= b; i++) {
+        d = i;
+        c.push(d);
+        // console.log(c);
+      }
+      // e = c.slice(0);
+      // f = c.slice(3);
+      // g = c.slice(6);
+      n1 = c.splice(0,1);
+      n2 = c.splice(0,1);
+      n3 = c.splice(0,1);
+
+      console.log(eval('var n' +num + '= []'));
+
+      console.log(n1);
+      console.log(n2);
+      console.log(n3);
+    }
+
+    prtI1(3);
+  </script>
+</body>
+
+</html>
