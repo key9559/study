@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="div"></div>
+  <script>
+    // -------------------------------------------------------------------------
+    console.log('랜덤시간 3개를 생성, 각 35분 뒤로 돌리기');    
+
+    var pickNum = 3;
+    for(i = 0; i < pickNum; i++) {
+      var randomNum = Math.random()*1000000000;
+      myNum = Math.floor(randomNum);
+      myNum2 = myNum + (35*60*1000);
+      var chDate = new Date(myNum);
+      var chDate2 = new Date(myNum2);
+
+      console.log(chDate);
+      console.log(chDate2);
+    }
+  </script>
+</body>
+
+</html>
